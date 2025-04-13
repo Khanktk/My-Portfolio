@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects - Muhammad Abdullah</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    .navbar {
+      background-color: #0d6efd;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      color: #ffc107 !important;
+    }
+
+    .main-heading {
+      text-align: center;
+      font-weight: 900;
+      font-size: 2.5rem;
+      margin: 50px 0 20px;
+    }
+
+    .project-card {
+      border: none;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-box {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      transition: background 1s ease;
+    }
+
+    .project-card:hover .project-box {
+      background: linear-gradient(135deg, #6610f2, #0d6efd);
+    }
+
+    .card-body {
+      background-color: white;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .btn-outline-primary {
+      border-radius: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0d6efd;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#Skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#Contact-Me">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <div class="container">
+    <h1 class="main-heading">My Projects</h1>
+    <div class="row g-4">
+
+    <!-- Project 10 (Newest Project) -->
+    <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Innovista Chenab Website</div>
+          <div class="card-body">
+            <p class="card-text">Successfully Created Innovista Chenab DHA Multan Website During My Intership.</p>
+            <a href="https://www.innovistachenab.pk/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <!-- <a href="#" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 9 (Newest Project) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Currency Converter</div>
+          <div class="card-body">
+            <p class="card-text">Simple Currency Converter app using JavaScript and a public Currency Converter API to fetch Currency Rate.</p>
+            <a href="https://khanktk.github.io/CurrencyConverter/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/CurrencyConverter" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8 (Newest Project) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Rock Paper Scissors</div>
+          <div class="card-body">
+            <p class="card-text">Simple Rock Paper Scissors Game using HTML CSS and JavaScript.</p>
+            <a href="https://khanktk.github.io/StonePaperScissors/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/StonePaperScissors" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 (Newest Project) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Tic Tac Toe</div>
+          <div class="card-body">
+            <p class="card-text">Simple Tic Taq Toe Game using HTML CSS and JavaScript.</p>
+            <a href="https://khanktk.github.io/tic-tac-toe/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/tic-tac-toe" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 (Newest Project) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Recipe App</div>
+          <div class="card-body">
+            <p class="card-text">Simple Recipe app using JavaScript and a public Recipe API to fetch Recipes.</p>
+            <a href="https://khanktk.github.io/RecipeApp/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/RecipeApp" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 (Newest Project) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Dictionary App</div>
+          <div class="card-body">
+            <p class="card-text">Simple dictionary app using JavaScript and a public dictionary API to fetch meanings.</p>
+            <a href="https://khanktk.github.io/Dictionary-App/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/Dictionary-App" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Portfolio Project</div>
+          <div class="card-body">
+            <p class="card-text">My personal portfolio project created using HTML, CSS and Bootstrap framework.</p>
+            <a href="https://khanktk.github.io/portfolio-project/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/portfolio-project" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Tindog Website</div>
+          <div class="card-body">
+            <p class="card-text">Responsive landing page using Bootstrap 5, designed for a fictional dog dating app.</p>
+            <a href="https://khanktk.github.io/Tindog-Responsive-Webpage/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/Tindog-Responsive-Webpage" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">Second Web Page (CSS)</div>
+          <div class="card-body">
+            <p class="card-text">Styled using CSS. Practiced layout, color schemes, and typography techniques.</p>
+            <a href="https://khanktk.github.io/Second-Web-Page-CSS/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/Second-Web-Page-CSS" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-box">My First Webpage</div>
+          <div class="card-body">
+            <p class="card-text">A basic HTML-only webpage created to practice structure and content layout.</p>
+            <a href="https://khanktk.github.io/My-First-Webpage/" class="btn btn-outline-primary btn-sm" target="_blank">Live Preview</a>
+            <a href="https://github.com/Khanktk/My-First-Webpage" class="btn btn-outline-secondary btn-sm ms-2" target="_blank">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © Muhammad Abdullah (2025)</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

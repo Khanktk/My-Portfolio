@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for responsiveness -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Muhammad Abdullah Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f8f9fa;
+        color: #212529;
+        scroll-behavior: smooth;
+      }
+
+      .navbar {
+        background-color: #0d6efd;
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: white !important;
+      }
+
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: #ffc107 !important;
+      }
+
+      .cursive-heading {
+        font-family: "Sacramento", cursive;
+        font-size: 3rem;
+        color: #0d6efd;
+        text-align: center;
+      }
+
+      .monserat-heading {
+        font-weight: 900;
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .container-fluid {
+        padding: 60px 15px;
+      }
+
+      .profile-img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .skills {
+        text-align: right;
+        padding: 10px;
+        color: white;
+        border-radius: 20px;
+        margin-bottom: 15px;
+      }
+
+      .skills.html {
+        width: 90%;
+        background-color: #0d6efd;
+      }
+
+      .skills.css {
+        width: 80%;
+        background-color: #6610f2;
+      }
+
+      .skills.js {
+        width: 50%;
+        background-color: #fd7e14;
+      }
+
+      .skills.office-work {
+        width: 85%;
+        background-color: #20c997;
+      }
+
+      .container-skill {
+        background-color: #dee2e6;
+        border-radius: 25px;
+        padding: 5px;
+      }
+
+      .cont {
+        padding: 30px;
+        text-align: center;
+      }
+
+      .cont a {
+        display: inline-block;
+        color: #0d6efd;
+        text-decoration: none;
+      }
+
+      .cont a:hover {
+        text-decoration: underline;
+      }
+
+      .carousel-inner {
+        text-align: center;
+        padding: 30px;
+      }
+
+      .carousel img {
+        max-width: 150px;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+
+      .arrows svg {
+        width: 40px;
+        height: 40px;
+        color: #0d6efd;
+      }
+
+      #footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #0d6efd;
+        color: white;
+        margin-top: 50px;
+      }
+      .skill-icon {
+        width: 60px;
+        height: 60px;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .r2 {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Home Section -->
+    <section id="Home">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggler-btton"
+            aria-controls="toggler-btton"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="toggler-btton">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#education16">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact-Me">Contact-Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="cursive-heading">Hello</h1>
+        <div class="row align-items-center">
+          <div class="col-lg-6 r2">
+            <h1 class="monserat-heading">Muhammad Abdullah</h1>
+            <p>
+              I'm a passionate and detail-oriented Front-End Web Developer with
+              a strong foundation in HTML, CSS, JavaScript, and modern web
+              technologies. I specialize in crafting responsive, user-friendly
+              websites and interfaces that deliver seamless user experiences.
+              This portfolio showcases my latest work and skills—I'm always
+              eager to grow, take on new challenges, and collaborate on
+              innovative web projects.
+            </p>
+            <p>
+              I'm currently open to new opportunities and would love your
+              feedback to continue improving and evolving as a developer.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img class="profile-img" src="mypic.png" alt="Profile-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education16">
+      <h1 class="cursive-heading">Education</h1>
+      <h1 class="monserat-heading">& Experience</h1>
+
+      <div id="edu-exp-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>
+              I have a complete bachelor's in computer science with a 4-year
+              degree and a 1-year diploma in IT (DIT).
+            </p>
+            <img src="degreelog.jpg" alt="degree-logo" />
+          </div>
+          <div class="carousel-item">
+            <p>
+              I have experience in teaching and office work, but my passion is
+              web development. I'm currently learning it. <br />
+              Also i have one Year Work Experience in DHA Multan as Experince
+              Internee.
+            </p>
+            <img src="experience-logo.jpg" alt="experience-logo" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#edu-exp-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="arrows">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-arrow-left-square-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#edu-exp-carousel"
+          data-bs-slide="next"
+        >
+          <span class="arrows">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-arrow-right-square-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills" class="py-5">
+      <h1 class="monserat-heading">Personal</h1>
+      <h1 class="cursive-heading">Skills</h1>
+
+      <div class="container mt-5">
+        <div class="row g-4">
+          <!-- HTML Skill -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center shadow-sm p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                alt="HTML"
+                class="skill-icon mx-auto"
+              />
+              <h5 class="mt-3">HTML</h5>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 90%"
+                >
+                  90%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS Skill -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center shadow-sm p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                alt="CSS"
+                class="skill-icon mx-auto"
+              />
+              <h5 class="mt-3">CSS</h5>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 80%"
+                >
+                  80%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript Skill -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center shadow-sm p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                alt="JavaScript"
+                class="skill-icon mx-auto"
+              />
+              <h5 class="mt-3">JavaScript</h5>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar bg-warning text-dark"
+                  role="progressbar"
+                  style="width: 50%"
+                >
+                  50%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office Work -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center shadow-sm p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/888/888879.png"
+                alt="Office"
+                class="skill-icon mx-auto"
+              />
+              <h5 class="mt-3">Office Work</h5>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 85%"
+                >
+                  85%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WordPress -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center shadow-sm p-3">
+              <img
+                src="wordpress.png"
+                alt="WordPress"
+                class="skill-icon mx-auto"
+              />
+              <h5 class="mt-3">WordPress</h5>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar bg-secondary"
+                  role="progressbar"
+                  style="width: 70%"
+                >
+                  70%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center shadow-sm p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                alt="GitHub"
+                class="skill-icon mx-auto"
+              />
+              <h5 class="mt-3">GitHub</h5>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar bg-dark"
+                  role="progressbar"
+                  style="width: 60%"
+                >
+                  60%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHP Skill -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center shadow-sm p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/919/919830.png"
+                alt="PHP"
+                class="skill-icon mx-auto"
+              />
+              <h5 class="mt-3">PHP</h5>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar bg-secondary"
+                  role="progressbar"
+                  style="width: 65%"
+                >
+                  65%
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MySQL Skill -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card text-center shadow-sm p-3">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/528/528260.png"
+                alt="MySQL"
+                class="skill-icon mx-auto"
+              />
+              <h5 class="mt-3">MySQL</h5>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 75%"
+                >
+                  75%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="Contact-Me"
+      class="py-5"
+      style="
+        background: linear-gradient(135deg, #0d6efd, #6610f2);
+        color: white;
+      "
+    >
+      <div class="container">
+        <h1 class="text-center fw-bold mb-3">Contact</h1>
+        <h2 class="text-center cursive-heading mb-5" style="color: #ffc107">
+          Let's Work Together
+        </h2>
+
+        <div class="row g-4">
+          <!-- Contact Info -->
+          <div class="col-md-6">
+            <h4>📧 Email</h4>
+            <p>
+              <a
+                href="mailto:muhammadabdullahkhan642@gmail.com"
+                class="text-white text-decoration-underline"
+              >
+                muhammadabdullahkhan642@gmail.com
+              </a>
+            </p>
+
+            <h4>🌐 Website</h4>
+            <p>
+              <a
+                href="projects.html"
+                class="text-white text-decoration-underline"
+              >
+                www.MyProjects.com
+              </a>
+            </p>
+
+            <h4>🔗 GitHub</h4>
+            <p>
+              <a
+                href="https://github.com/Khanktk"
+                target="_blank"
+                class="text-white text-decoration-underline"
+              >
+                github.com/Khanktk
+              </a>
+            </p>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <form
+              action="https://formsubmit.co/muhammadabdullahkhan642@gmail.com"
+              method="POST"
+            >
+              <!-- Anti-spam hidden fields -->
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://khanktk.github.io/my-porfolio/thank-you.html"
+              />
+
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Write your message here..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-warning fw-bold px-4 mt-2">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <p>Copyright © Muhammad Abdullah (2025)</p>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
